@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b8315e1-b92e-4e98-9806-8d5fc5e84e35" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/我的生活-01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/我的生活-02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/我的生活-03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/我的生活-04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/我的生活-05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myLife_old.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paintingOnline_old.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/test.lc.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/enrollStudent.html" afterPath="$PROJECT_DIR$/enrollStudent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goRed.html" afterPath="$PROJECT_DIR$/goRed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myLife.html" afterPath="$PROJECT_DIR$/myLife.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paintingOnline.html" afterPath="$PROJECT_DIR$/paintingOnline.html" />
     </list>
     <ignored path="test.lc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.40888888" vertical-offset="370" max-vertical-offset="2204">
-              <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+              <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -392,7 +350,7 @@
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40888888" vertical-offset="370" max-vertical-offset="2204">
-          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
           <folding />
         </state>
       </provider>
