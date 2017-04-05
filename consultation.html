@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    	<link rel="stylesheet" href="css/swiper.css">
+    	<link rel="stylesheet" href="css/common.css">
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="page_container page3">
+            <div class="page_main">
+                <div class="return"><img src="img/return.png" alt="" /></div>
+                <div class="button_div">
+                	<button class="button wechat"><i></i> 微信 | QQ咨询</button>
+                    <button class="button baoming"><i></i>预报名(定床位)</button>
+                    <button class="button phone"><i></i>电话详细咨询</button>
+                </div>
+                    
+                </div>
+          </div>
+	</body>
+	<script>
+		$(function(){
+				$('.button_div').css('padding-top',$('.page_container').height()/5);
+			$(window).resize(function(){
+				$('.button_div').css('padding-top',$('.page_container').height()/5);
+			})
+			
+		})
+	</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    	<link rel="stylesheet" href="css/swiper.css">
+    	<link rel="stylesheet" href="css/common.css">
+    	<script type="text/javascript" src="js/jquery.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="swiper-slide page_container page4">
+               <div class="page_main">
+               	<div class="return"><img src="img/return.png" alt="" /></div>
+               	<div style="clear: both;"></div>
+                        <form action="">
+                            <div class="message_div">
+                                <label for="name">姓&ensp;&ensp;&ensp;&ensp;名</label>
+                                <input type="text" id="name" placeholder="" value=""/>
+                            </div>
+                            <div class="message_div">
+                                <label for="sex">姓&ensp;&ensp;&ensp;&ensp;别</label>
+                                <i class='select'></i>
+                                <input type="text" id="sex" placeholder="" value=""/>
+                            </div>
+                            <div class="message_div">
+                                <label for="tel">手机号码</label>
+                                <input type="text" id="tel" placeholder="" value=""/>
+                            </div>
+                            <div class="message_div">
+                                <label for="school">在读中学</label>
+                                <input type="text" id="school" placeholder="" value=""/>
+                            </div>
+                            <div class="message_div">
+                            	<i class='select'></i>
+                                <label for="area">先居区域</label>
+                                <input type="text" id="area" placeholder="" value=""/>
+                            </div>
+                            <div class="message_div">
+                                <label for="bed_reservation">床位预定</label>
+                                <i class='select'></i>
+                                <input type="text" id="bed_reservation" placeholder="" value=""/>
+                            </div>
+                            <div class="message_div">
+                                <label for="wechat">微信号码</label>
+                                <input type="text" id="wechat" placeholder="" value=""/>
+                            </div>
+                        </form>
+                        <p class="grayFont font12" >
+                            <span class="redFont">*</span>
+                                                                    预约报名用于寝室及名额预约，最终红土地根据实际情况进行安排，届时可调整！
+                        </p>
+                        <button class="button">提交报名</button>
+                    </div>
+               </div>
+            
+          </div>
+	</body>
+	<script>
+		$(function(){
+				$('.button_div').css('padding-top',$('.page_container').height()/5);
+			$(window).resize(function(){
+				$('.button_div').css('padding-top',$('.page_container').height()/5);
+			})
+			
+		})
+	</script>
+</html>
