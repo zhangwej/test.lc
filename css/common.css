@@ -61,7 +61,7 @@ header li:nth-child(2),header li:nth-child(4){width:24%}
 .page1 .first-p{margin-top:0.3rem}
 .page1 .button{margin:0.2rem 0}
 .page1 .img_top{float: left;width:0.8rem;height:0.74rem}
-.page1 .img-point{width: 1rem;position: fixed;bottom: 0.5rem;left: 50%;margin-left: -0.5rem;}
+.page1 .img-point{width:0.5rem;position: fixed;bottom: 0.35rem;left: 50%;margin-left: -0.25rem;}
 
 .page3 .button{margin:25px 0}
 .page3 .button i{*display:inline;*zoom:1;background: url(../img/icon_button.png) no-repeat;width: 0.35rem;vertical-align: middle;height: 0.25rem;background-size: 0.37rem 2.3rem;display: inline-block;}
