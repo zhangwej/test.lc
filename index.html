@@ -4,13 +4,10 @@
     <meta charset="utf-8">
     <title>Swiper demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/common.css">
+    <script type='text/javascript' src='js/jquery.min.js'></script>
 
-    <!-- Demo styles -->
     <style>
     html, body {
         position: relative;
@@ -39,6 +36,7 @@
             <div class="swiper-slide page_container  page1">
                 <header>
                     <ul>
+                        <li class='nav_current'>首页</li>  
                         <li>走进红土地</li>
                         <li>我的生活</li>
                         <li>线上美术馆</li>
@@ -47,111 +45,50 @@
                 </header>
                 <div class="main-bg">
                     <div class="page_main">
-                        <div class="page_main_top">
-                            <img src="" alt=""/>
-                            <h3 class="title">给予更多可能的<span class="redFont">一片红土地</span></h3>
+                        <div class="marginT30">
+                            <img class="img_top" src="img/1.png" alt=""/>
+                            <h3 class="title">给予更多可能的</h3>
+                            <h3 class="title redFont">一片红土地！</h3>
                         </div>
-                        <p class="grayFont">sds</p>
-                        <p class="redFont">sdfsd</p>
+                        <p class="first-p grayFont marginB10">艺术文化教育的日渐兴盛，为面向全行业的美术专业带来了更多的选择，在红土地这片沃土上，带给你们更多的可能性！</p>
+      						
+                        <p class="redFont">红土地艺术培训学校，专注美术高考13年</p>
+                        <p class="redFont">给予孩子更美好的未来！</p>
                         <button class="button">立即咨询 & 预报名</button>
-                        <p class="redFont">sdfsd</p>
+                        <p class="redFont p_title">为什么选择美术艺考?</p>
+                        <img class="img-point" src="img/icon_point.png" alt="" />
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide page_container page_container page2">
-                <header>
-                    <ul>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                    </ul>
-                </header>
+            <div class="swiper-slide page_container page2">          
                 <div class="main-bg">
                     <div class="page_main">
-                        <h5 class="grayFont"></h5>
-                        <p></p>
-                        <p></p>
+                        <h5 class="grayFont"></h5>                
+                        <p class="textleft grayFont" style="margin-top:0.5rem;text-indent: 2em;">近年来美术艺考热度不断上升，江苏省甚至首先试点将美术设为中考科目。如果你对美术专业以及美术生就业前景还不了解，不妨看看下面的内容吧！
+                          	美术是一个应用性很强的专业。伴随经济发展，各行各业的兴起需要大量的艺术专业人才。         
+                    		<span class='redFont'>建筑、广告、品牌设计、当代艺术、互联网、动画、服装、影视、工业、装潢、多媒体等</span>
+                    		可服务于全产业的高薪职业，都是改革之下快速发展的典型。这些行业具备的高设计、高美学属性，使其涉及的大量工作内容都需要从业人员具备相应的美术基础。美术艺考则成为了你与这些巨大、优质就业市场之间的连接。选择美术艺考，就是选择有更多可能的未来！</p>   
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide page_container page3">
-                <header>
-                    <ul>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                    </ul>
-                </header>
-                <div class="main-bg">
-                    <div class="page_main">
-                        <button class="button"><i></i> 微信 | QQ咨询</button>
-                        <button class="button"><i></i>预报名（定床位）</button>
-                        <button class="button"><i></i>电话详细咨询</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide page_container page4">
-                <header>
-                    <ul>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                        <li>发爱到底</li>
-                    </ul>
-                </header>
-                <div class="main-bg">
-                    <div class="page_main">
-                        <form action="">
-                            <div class="message_div">
-                                <label for="name">姓名&ensp;&ensp;&ensp;&ensp;</label>
-                                <input type="text" id="name" placeholder="" value=""/>
-                            </div>
-                            <div class="message_div">
-                                <label for="sex">姓别&ensp;&ensp;&ensp;&ensp;</label>
-                                <input type="text" id="sex" placeholder="" value=""/>
-                            </div>
-                            <div class="message_div">
-                                <label for="tel">手机号码</label>
-                                <input type="text" id="tel" placeholder="" value=""/>
-                            </div>
-                            <div class="message_div">
-                                <label for="school">在读中学</label>
-                                <input type="text" id="school" placeholder="" value=""/>
-                            </div>
-                            <div class="message_div">
-                                <label for="area">先居区域</label>
-                                <input type="text" id="area" placeholder="" value=""/>
-                            </div>
-                            <div class="message_div">
-                                <label for="bed_reservation">床位预定</label>
-                                <input type="text" id="bed_reservation" placeholder="" value=""/>
-                            </div>
-                            <div class="message_div">
-                                <label for="wechat">微信号码</label>
-                                <input type="text" id="wechat" placeholder="" value=""/>
-                            </div>
-                        </form>
-                        <p>
-                            <span class="redFont">*</span>
-                        </p>
-                        <button class="button">提交报名</button>
-                    </div>
-                </div>
-            </div>
+            </div>          
+            
         </div>
-        <!-- Add Pagination -->
-        <!--<div class="swiper-pagination"></div>-->
     </div>
     <script src="js/swiper.min.js"></script>
+    
     <script>
+    $(function(){
+    	 $('.page2').css('margin-top',$(window).height());
+    	 $(window).resize(function(){
+    	 	$('.page2').css('margin-top',$(window).height());
+    	 })
+    })
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         direction: 'vertical',
         slidesPerView: 1,
         paginationClickable: true,
-        spaceBetween:10,
+        spaceBetween:0,
         mousewheelControl: true
     });
     </script>
