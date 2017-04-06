@@ -6,6 +6,7 @@
     	<link rel="stylesheet" href="css/swiper.css">
     	<link rel="stylesheet" href="css/common.css">
     	<script type="text/javascript" src="js/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/signup.js"></script>
 		<title></title>
 	</head>
 	<body>
@@ -23,10 +24,10 @@
                                 <i class='select'></i>
                                 <input onclick="shows(this)" type="text" id="sex" placeholder="男" value="男" readonly=""/>
                           
-		                          <ul class='select_show'>
+		                          <!--<ul class='select_show'>
 				                    <li>男</li>
 				                    <li>女</li>
-				                </ul>
+				                </ul>-->
                             </div>
                             <div class="message_div">
                                 <label for="tel">手机号码</label>
@@ -40,20 +41,20 @@
                             	<i class='select'></i>
                                 <label for="area">先居区域</label>
                                 <input type="text" id="area" placeholder="" value="" readonly=""/>
-                            <ul class='select_show'>
+                            <!--<ul class='select_show'>
 			                    <li></li>
 			                    <li>否</li>
-			                </ul>
+			                </ul>-->
 			                
                             </div>
                             <div class="message_div">
                                 <label for="bed_reservation">床位预定</label>
                                 <i class='select'></i>
-                                <input onclick="shows(this)" type="text" id="bed_reservation" placeholder="是" value="是" readonly=""/>
-                            <ul class='select_show'>
+                                <input onclick="shows_bed(this)" type="text" id="bed_reservation" placeholder="不预定" value="不预定" readonly=""/>
+                            <!--<ul class='select_show'>
 			                    <li>是</li>
 			                    <li>否</li>
-			                </ul>
+			                </ul>-->
                             </div>
                             <div class="message_div">
                                 <label for="wechat">微信号码</label>
@@ -70,45 +71,26 @@
                </div>
             
           </div>
-          
-          <!--<div class='model-shadow'>
-          	<div class='model-content'> 
+          <div class='model-shadow' id='beds'>
+          	<div class='model-content'>          	
+          		<div class='title'>请选择</div>
           		<ul class='select_show'>
-                    <li>男</li>
-                    <li>女</li>
+                    <li>不预定</li>
+                    <li>两人间</li> 
+                    <li>四人间</li>
+                    <li>六人间</li>                  
                 </ul>
           	</div>
-          </div>-->
+          </div>
+          
+          <div class='model-shadow' id='sexs'>
+          	<div class='model-content'>          	
+          		<div class='title'>请选择</div>
+          		<ul class='select_show'>
+                    <li>男</li>
+                    <li>女</li>                   
+                </ul>
+          	</div>
+          </div>
 	</body>
-	<script>	
-		function shows(obj){	
-			obj = $(obj);	
-			$(function(){
-				var next = $(obj).next();
-				next.show();
-				
-				$(next).find('li').each(function(){
-					$(this).click(function(){
-						$(obj).val($(this).text());
-						next.hide();
-						console.log($(this).text());
-					})
-				})
-			})				
-		}
-			
-		$(function(){		
-			
-			console.log($('#sex').width());
-			$('.select_show').width($('#sex').width());
-				$('.button_div').css('padding-top',$('.page_container').height()/5);
-				$('.model-content').css('padding-top',$('.page_container').height()/2.5);
-			$(window).resize(function(){
-				$('.button_div').css('padding-top',$('.page_container').height()/5);
-				$('.model-content').css('padding-top',$('.page_container').height()/2.5);
-				$('.select_show').width($('#sex').width());
-			})
-			
-		})
-	</script>
 </html>

@@ -48,11 +48,12 @@ header li:nth-child(3),header li:nth-child(5){width:24%}
 .page_main .message_div input{    float: right;background: rgba(255,255,255,0);width:58%;padding:0.07rem 10px;border:1px solid #7c7c7c}
 .page_main .message_div select{background: rgba(255,255,255,0);width:66%;padding:0.07rem 10px;border:1px solid #7c7c7c}
 .page_main .message_div option{width:60%;background: red;border:none;}
-.select_show{display:none;position:absolute;right:0.2rem;z-index:1000;top:0.31rem;}
-.select_show li{border-bottom:1px solid #7c7c7c;padding:0.08rem 0.1rem;width:100%;height:100%;background:#fff;text-align: left;}
-.model-shadow{position:absolute;height:100%;width:100%;background: rgba(0,0,0,0.4);}
-.model-content{width:2rem;height:2rem;margin:0 auto;}
 
+.model-shadow{display:none;position:absolute;height:100%;width:100%;background: rgba(0,0,0,0.4);}
+.model-content{background:#fff;overflow: hidden;width: 2rem;padding: 0.1rem;margin:0 auto;border-radius: 4px;}
+.select_show li{padding:0.08rem 0rem;width:100%;height:100%;background:#fff;text-align: left;}
+.model-content .title{background: #fff;width:100%;color:#850009;border-bottom: 1px solid #7c7c7c;padding:0.08rem 0rem;}
+.select_show li:not(:last-child){border-bottom:1px solid #7c7c7c;}
 
 .page_main .message_div i.select{z-index:1;display: inline-block;background: url(../img/icon_select.png) no-repeat;width: 0.3rem;position: absolute;right: 2px;top: 0.09rem;height: 0.3rem;background-size: 0.2rem 0.14rem;}
 .page_main p{text-align: justify;clear: both;font-size: 0.15rem;line-height: 0.24rem;}
