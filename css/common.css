@@ -43,9 +43,9 @@ header li:nth-child(3),header li:nth-child(5){width:24%}
 .main-bg{width:100%;height:calc(100% - 1.2rem)}
 .page_main{width:80%;height:100%;margin-left:10%;text-align: center}
 .page_main .title{margin-left: 0.1rem;*display:inline;*zoom:1;display: inline-block;font-size:0.3rem;color:#7c7c7c;text-align: left;}
-.page_main .message_div{height: 0.23rem;clear: both;margin-top:20px;position: relative;}
-.page_main .message_div>span{float:left;text-align: left;font-size:0.16rem;margin-right: 12px;}
-.page_main .message_div>input{float:left;background: rgba(255,255,255,0);    width: calc(100% - 1.1rem);padding:0.07rem 10px;border:1px solid #7c7c7c}
+.page_main .message_div{margin-top:20px;position: relative;}
+.page_main .message_div label{text-align: left;font-size:0.16rem;margin-right: 12px;}
+.page_main .message_div input{    float: right;background: rgba(255,255,255,0);width:58%;padding:0.07rem 10px;border:1px solid #7c7c7c}
 .page_main .message_div select{background: rgba(255,255,255,0);width:66%;padding:0.07rem 10px;border:1px solid #7c7c7c}
 .page_main .message_div option{width:60%;background: red;border:none;}
 .select_show{display:none;position:absolute;right:0.2rem;z-index:1000;top:0.31rem;}
@@ -53,8 +53,8 @@ header li:nth-child(3),header li:nth-child(5){width:24%}
 .model-shadow{position:absolute;height:100%;width:100%;background: rgba(0,0,0,0.4);}
 .model-content{width:2rem;height:2rem;margin:0 auto;}
 
-.sex input,.bed input{width:22.9%!important}
-.page_main .message_div i.select{z-index:0;display: inline-block;background: url(../img/icon_select.png) no-repeat;width: 0.2rem;position: absolute;right: 0.2rem;top: 0.09rem;height: 0.1rem;background-size: 0.2rem 0.14rem;}
+
+.page_main .message_div i.select{z-index:1;display: inline-block;background: url(../img/icon_select.png) no-repeat;width: 0.3rem;position: absolute;right: 2px;top: 0.09rem;height: 0.3rem;background-size: 0.2rem 0.14rem;}
 .page_main p{text-align: justify;clear: both;font-size: 0.15rem;line-height: 0.24rem;}
 .page_main .p_title{text-align: center;margin-bottom:5px;font-size: 0.16rem!important; letter-spacing: 0.015rem;}
 
