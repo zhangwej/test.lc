@@ -16,7 +16,7 @@
 }
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p,blockquote,th,td,header,nav,section,button {margin:0;  padding:0  }
 body {font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;  line-height:1.5;  font-size:14px;  color:#444;  background-color:#fff;  -webkit-user-select:none;  -webkit-text-size-adjust:100%;  -webkit-tap-highlight-color:transparent;  outline:0  }
-a{color: #444}
+a{color: #444;list-style-type: none;text-decoration: none}
 li{display: inline-block;*display:inline;*zoom:1}
 h1,h2,h3,h4,h5,h6 {font-size:100%;  font-weight:400  }
 .redFont{color:#850009!important}
@@ -28,13 +28,13 @@ h1,h2,h3,h4,h5,h6 {font-size:100%;  font-weight:400  }
 .marginT30{margin:40px 0 20px 0;}
 .button{width:80%;padding:0.12rem;background:#971f2e;border:none;outline:none;border-radius:6px;color:#fff;font-size:0.14rem;letter-spacing:0.03rem}
 
-.nav_current{color:#fff!important;font-size: 0.14rem!important;border-bottom: 1px solid #fff}
+.nav_current{color:#fff!important;font-size: 0.14rem!important;border-bottom: 2px solid #fff}
 .page_container{position:absolute;height:100%;width:100%;background:url('../img/bg.png') no-repeat;background-size: 100% 100%;}
 header{width: 100%;height:0.8rem;background:#850009;position: relative}
-header ul{position: absolute;width:100%;bottom:13px}
+header ul{position: absolute;width:100%;bottom:0px}
 header li{color: #a5a5a5;float:left;font-size:0.145rem;width:19.5%;text-align: center;line-height:0.16rem;}
 header a{color: #a5a5a5;text-decoration: none; display: inline-block;height:0.2rem}
-header li:not(:last-child) em{color:#fff;padding-left:10%;border-right:1px solid #fff}
+header li:not(:last-child) em{color:#fff;padding-left:10%;border-right:1px solid #fff;display: inline-block;  height: 0.11rem;}
 header li:nth-child(1){width:13%}
 header li:nth-child(2),header li:nth-child(4){width:24%}
 /*header li{border-right:2px solid #Fff;}*/
@@ -42,7 +42,7 @@ header li:nth-child(2),header li:nth-child(4){width:24%}
 
 .main-bg{width:100%;height:calc(100% - 1.2rem)}
 .page_main{width:80%;height:100%;margin-left:10%;text-align: center}
-.page_main .title{margin-left: 0.1rem;*display:inline;*zoom:1;display: inline-block;font-size:0.24rem;color:#7c7c7c;text-align: left;}
+.page_main .title{margin-left: 0.1rem;*display:inline;*zoom:1;display: inline-block;font-size:0.3rem;color:#7c7c7c;text-align: left;}
 .page_main .message_div{margin-top:20px;position: relative;}
 .page_main .message_div label{text-align: left;font-size:0.16rem;margin-right: 12px;}
 .page_main .message_div input{background: rgba(255,255,255,0);width:58%;padding:0.07rem 10px;border:1px solid #7c7c7c}
@@ -60,7 +60,7 @@ header li:nth-child(2),header li:nth-child(4){width:24%}
 .page1 .title:first-child{padding-top:20px;}
 .page1 .first-p{margin-top:0.3rem}
 .page1 .button{margin:0.2rem 0}
-.page1 .img_top{float: left;width:0.8rem;height:0.74rem}
+.page1 .img_top{float: left;width:0.8rem;height:0.8rem;margin-top:5px}
 .page1 .img-point{width:0.5rem;position: fixed;bottom: 0.35rem;left: 50%;margin-left: -0.25rem;}
 
 .page3 .button{margin:25px 0}
@@ -73,17 +73,20 @@ header li:nth-child(2),header li:nth-child(4){width:24%}
 
 .goRed_bg{width: 100%;height:1.5rem;overflow: hidden;}
 .goRed_bg img{width: 100%;height:1.5rem}
-.member_detail{position:absolute;top:0.2rem;left:0.96rem;width: 70%;display:inline-block;*display: block;*zoom:1;}
-.member{position:absolute;top: 0.2rem; left: 0.16rem;display:inline-block;width:0.6rem;height:0.6rem;border-radius:0.3rem;overflow: hidden;}
-.member img{width: 0.6rem;height: 0.6rem;border-radius: 1rem;}
+.member_detail{position:absolute;top:0.2rem;left:1.3rem;width: 60%;display:inline-block;*display: block;*zoom:1;}
+.member{position:absolute;top: 0.32rem; left: 0.16rem;display:inline-block;width:1rem;height:1rem;border-radius:0.3rem;overflow: hidden;}
+.member img{width: 1rem;height: 1rem;border-radius: 1rem;}
 .swiper-pagination-bullet-active{opacity: 1;background: #8b8b8b;}
 
-.red_land .page_main{width:80%;margin-left:10%}
+.red_land .page_main{width:90%;margin-left:5%}
 .red_land .good_show{text-align:center;color:#fff;height:40px;line-height:40px;width:100%;background:#850009;}
 .red_land .five ul{display: inline-block;font-size: 0.13rem;text-align: center;}
 .red_land .five ul:not(:last-child) li:not(:first-child){border-right: 1px solid #444;}
 .red_land .five li{display: block;padding: 0 6px;}
 .red_land .page_main_shwo{width:100%;margin-left:0%}
+.red_land .page_main_shwo img{width:100%}
+.rednext{width: 100%;overflow: hidden}
+.rednext img{width: 100%;overflow: hidden}
 .red_land h2,.my_life h2,.painting_online h2,.enroll_student h2{text-align:center;color: #850009;font-size: 0.19rem;margin: 20px 0 8px 0;}
 .red_land .three-box{margin-top:20px;font-size:0.17rem;color: #850009;box-sizing:border-box;width:50%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;float:left;}
 .red_land i{background: url(../img/icon_goRed.png) no-repeat;display: inline-block;background-size: 2.54rem 0.98rem;width: 0.5rem;height: 0.42rem;vertical-align: middle;}
@@ -94,14 +97,22 @@ header li:nth-child(2),header li:nth-child(4){width:24%}
 .red_land .one .swiper-container,.my_life .swiper-container,.painting_online .swiper-container{height:2rem;background:#eee;}  
 .red_land .one h3,.my_life h3,.painting_online h3{color:#850009;display:inline-block;font-size: 0.15rem;}
 
-.enroll_student .enroll_main{width:94%;margin-left:3%}
-.enroll_student .page_main p{width:80%;margin-left:10%}
+.enroll_student .enroll_main{width:90%;margin-left:5%}
+.enroll_student .page_main p{width:100%;}
 .enroll_student h3{text-align: left;color:#850009;font-size: 0.16rem;margin:8px 0;}
 
 .my_life_div{width:100%;height:auto}
 .painting_online_div{ width: 96%;height: auto;  margin-left: 2%;  }
 .my_life_div img{width:100%;height:auto;display: block}
 .painting_online_div img{width:100%;height:auto;display: block;margin-top:8px;}
+
+.teacher_tetail{margin-bottom: 0.2rem}
+.teacher_tetail{width:90%;margin-left:5%}
+.teacher_tetail h2{color:#850009;font-size: 0.18rem;margin:0.2rem 0}
+.teacher_tetail .img_div{width: 100%;height:2rem;overflow: hidden;}
+.teacher_tetail .img_div img{width: 100%;}
+.teacher_tetail .content_div h3{margin:0.08rem 0}
+.teacher_tetail .content_div p{text-align: justify;clear: both;font-size: 0.15rem;line-height: 0.24rem;}
 
 
 
