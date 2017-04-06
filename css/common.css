@@ -114,6 +114,7 @@ header li:nth-child(2),header li:nth-child(4){width:24%}
 .teacher_tetail .img_div img{width: 100%;}
 .teacher_tetail .content_div h3{margin:0.08rem 0}
 .teacher_tetail .content_div p{text-align: justify;clear: both;font-size: 0.15rem;line-height: 0.24rem;}
+.page_top_bg{background: url('../img/bg_top.png') no-repeat;background-size:100%;text-align: center; height: 1.4rem;margin-bottom:0.3rem}
 
 
 
