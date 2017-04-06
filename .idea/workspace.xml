@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b8315e1-b92e-4e98-9806-8d5fc5e84e35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/enrollStudent.html" afterPath="$PROJECT_DIR$/enrollStudent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goRed.html" afterPath="$PROJECT_DIR$/goRed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myLife.html" afterPath="$PROJECT_DIR$/myLife.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paintingOnline.html" afterPath="$PROJECT_DIR$/paintingOnline.html" />
     </list>
     <ignored path="test.lc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4844904" vertical-offset="356" max-vertical-offset="2432">
+            <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="2432">
               <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
               <folding />
             </state>
@@ -74,12 +69,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goRed.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="goRed.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goRed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.229885" vertical-offset="148" max-vertical-offset="3021">
-              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-              <folding />
+            <state vertical-scroll-proportion="0.26440677" vertical-offset="262" max-vertical-offset="3021">
+              <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,11 +144,11 @@
         <option value="$PROJECT_DIR$/teacher_detail/yangwei.html" />
         <option value="$PROJECT_DIR$/consultation.html" />
         <option value="$PROJECT_DIR$/enrollStudent.html" />
-        <option value="$PROJECT_DIR$/goRed.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/myLife.html" />
         <option value="$PROJECT_DIR$/paintingOnline.html" />
         <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/goRed.html" />
       </list>
     </option>
   </component>
@@ -159,8 +157,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="7" />
-    <option name="y" value="37" />
+    <option name="x" value="-2" />
+    <option name="y" value="43" />
     <option name="width" value="1344" />
     <option name="height" value="827" />
   </component>
@@ -262,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="37" width="1344" height="827" extended-state="0" />
+    <frame x="-2" y="43" width="1344" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -374,7 +372,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="2831">
           <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -546,14 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goRed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.229885" vertical-offset="148" max-vertical-offset="3021">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.229885" vertical-offset="585" max-vertical-offset="1881">
@@ -590,9 +583,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4844904" vertical-offset="356" max-vertical-offset="2432">
+        <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="2432">
           <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goRed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26440677" vertical-offset="262" max-vertical-offset="3021">
+          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
