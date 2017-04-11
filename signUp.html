@@ -6,59 +6,51 @@
     	<link rel="stylesheet" href="css/swiper.css">
     	<link rel="stylesheet" href="css/common.css">
     	<script type="text/javascript" src="js/jquery.min.js"></script>
-    	<script type="text/javascript" src="js/signup.js"></script>
+    	<script type="text/javascript" src="js/vue.js"></script>
+    	<script type="text/javascript" src="js/vue-resource.js"></script>
+    	<!--<script type="text/javascript" src="js/signup.js"></script>-->
 		<title></title>
 	</head>
 	<body>
-		<div class="swiper-slide page_container page4">
+		<div id='page'>
+			<div class="swiper-slide page_container page4">
                <div class="page_main">
                	<div class="return" onclick="javascript:history.back(-1);"><img src="img/return.png" alt="" /></div>
                	<div style="clear: both;"></div>
-                        <form action="">
+                        <form action="" id='form'>
                             <div class="message_div">
                                 <label for="name">姓&ensp;&ensp;&ensp;&ensp;名</label>
-                                <input type="text" id="name" placeholder="" value=""/>
+                                <input type="text" id="name" placeholder="" value="张三"/>
                             </div>
                             <div class="message_div">
                                 <label for="sex">姓&ensp;&ensp;&ensp;&ensp;别</label>
                                 <i class='select'></i>
-                                <input onclick="shows(this)" type="text" id="sex" placeholder="男" value="男" readonly=""/>
-                          
-		                          <!--<ul class='select_show'>
-				                    <li>男</li>
-				                    <li>女</li>
-				                </ul>-->
+                                <input type="text" v-on:click="sex_show(this)" id="sex" v-bind:placeholder="sex" v-bind:value="sex" readonly=""/>
+                         
                             </div>
                             <div class="message_div">
                                 <label for="tel">手机号码</label>
-                                <input type="text" id="tel" placeholder="" value=""/>
+                                <input type="text" id="tel" placeholder="" value="18883767685"/>
                             </div>
                             <div class="message_div">
                                 <label for="school">在读中学</label>
-                                <input type="text" id="school" placeholder="" value=""/>
+                                <input type="text" id="school" placeholder="" value="华阳高中"/>
                             </div>
                             <div class="message_div">
                             	<i class='select'></i>
                                 <label for="area">先居区域</label>
-                                <input type="text" id="area" placeholder="" value="" readonly=""/>
-                            <!--<ul class='select_show'>
-			                    <li></li>
-			                    <li>否</li>
-			                </ul>-->
-			                
+                                <input type="text" id="area" placeholder="" value="成都市" readonly=""/>
+                            
                             </div>
                             <div class="message_div">
                                 <label for="bed_reservation">床位预定</label>
                                 <i class='select'></i>
-                                <input onclick="shows_bed(this)" type="text" id="bed_reservation" placeholder="不预定" value="不预定" readonly=""/>
-                            <!--<ul class='select_show'>
-			                    <li>是</li>
-			                    <li>否</li>
-			                </ul>-->
+                                <input type="text" v-on:click='bed_show()' id="bed_reservation" v-bind:placeholder="bed" v-bind:value="bed" readonly=""/>
+                            
                             </div>
                             <div class="message_div">
                                 <label for="wechat">微信号码</label>
-                                <input type="text" id="wechat" placeholder="" value=""/>
+                                <input type="text" id="wechat" placeholder="" value="144567387"/>
                             </div>
                             
                         </form>
@@ -66,31 +58,120 @@
                             <span class="redFont">*</span>
                                                                     预约报名用于寝室及名额预约，最终红土地根据实际情况进行安排，届时可调整！
                         </p>
-                        <button class="button">提交报名</button>
+                        <button class="button" v-on:click='getData()'>提交报名</button>
                     </div>
                </div>
-            
-          </div>
+                  
           <div class='model-shadow' id='beds'>
           	<div class='model-content'>          	
           		<div class='title'>请选择</div>
-          		<ul class='select_show'>
-                    <li>不预定</li>
-                    <li>两人间</li> 
-                    <li>四人间</li>
-                    <li>六人间</li>                  
+          		<ul class='select_show' >
+                    <li v-for="item in bed_select" v-on:click='changebed_init($event)'>{{item.name}}</li>             
                 </ul>
           	</div>
           </div>
           
-          <div class='model-shadow' id='sexs'>
+          <div class='model-shadow' id='sexs' >
           	<div class='model-content'>          	
           		<div class='title'>请选择</div>
           		<ul class='select_show'>
-                    <li>男</li>
-                    <li>女</li>                   
+                    <li  v-for="item in sex_select" v-on:click='change_init($event)'>{{item.name}}</li>                                  
                 </ul>
           	</div>
-          </div>
+		</div>
+   	
+        </div>
+          <script>
+         
+          	new Vue({
+          		el:'#page',
+          		data:{
+          			sex_select:[
+          				{name:'男'},
+          				{name:'女'}
+          			],
+          			bed_select:[
+          				{name:'不预定'},
+          				{name:'两人间'},
+          				{name:'四人间'},
+          				{name:'六人间'}        			     				
+          			],
+          			sex:'男',
+          			bed:'不预定',
+          			description:'',
+          			userInfo:'',
+          			access_token:"aec815a1c38aa415b84ce535212f0b9bc68132fc"
+          			
+          		},
+          		methods:{
+          			change_init:function(obj){
+          				var _this = this;  
+        				_this.sex=obj.target.innerHTML;
+        				document.getElementById('sexs').style.display='none'; 
+          			},
+          			changebed_init:function(obj){
+          				var _this = this;  
+        				_this.bed=obj.target.innerHTML;
+        				document.getElementById('beds').style.display='none';
+          			},
+          			sex_show:function(obj){         								
+          				document.getElementById('sexs').style.display='block'; 
+          				var h =window.screen.height/3;
+          				document.getElementById('sexs').style.paddingTop=h+'px';
+        				},
+          			bed_show:function(obj){
+          				document.getElementById('beds').style.display='block';
+          				document.getElementById('beds').style.height=document.getElementsByTagName('windows').height/3;
+          				var h =window.screen.height/3;
+          				document.getElementById('beds').style.paddingTop=h+'px';
+          			},
+          			getData:function(){
+          				this.$http.get("https://api.github.com/repos/Jam741/redGoCustrom").then(function (res) {
+						var _this = this;
+	 					_this.description = res.data.description;
+						console.log(_this.description);
+						var name = document.getElementById('name').value;
+						var sex = document.getElementById('sex').value;
+						var tel = document.getElementById('tel').value;
+						var school = document.getElementById('school').value;
+						var area = document.getElementById('area').value;
+						var bed_reservation = document.getElementById('bed_reservation').value;
+						var wechat = document.getElementById('wechat').value;
+						_this.userInfo = name+'-'+sex+'-'+tel+'-'+school+'-'+area+'-'+bed_reservation+'-'+wechat+';';
+						console.log(_this.userInfo);
+
+			          })
+          				$.ajax({  
+				            type: "patch",  
+				            url: "https://api.github.com/repos/Jam741/redGoCustrom",  
+				            contentType: "application/json",  
+				            dataType: "json",  
+				            data:{ 
+					            "access_token":"aec815a1c38aa415b84ce535212f0b9bc68132fc",
+					            "a":{
+					            	"name":"redGoCustrom",
+					            	"description":"test!description add"+"张三-男-18883767685-华阳高中-成都市-不预定-144567387;"
+					            }
+				            
+				            },
+				            success: function (jsonResult) {  
+				                console.log(jsonResult);  
+				            }  
+				        });  
+				    }  
+          				
+//        			this.$http.patch("https://api.github.com/repos/Jam741/redGoCustrom",{access_token='aec815a1c38aa415b84ce535212f0b9bc68132fc'},{}).then(function(res,err){
+//        				var _this = this;
+//        				console.log(err);
+//        				console.log(res.data);
+//        				
+//        				
+//        			}).catch(e=>{
+//        				console.log(e)
+//        			})
+//        			}
+        		}
+          	})
+          </script>
 	</body>
 </html>
