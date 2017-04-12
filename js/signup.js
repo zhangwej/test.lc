@@ -126,9 +126,9 @@
 		          			{"name":"redGoCustrom","description":this.userMessage}
 		          			).then(function(res){
 		          				layer.open({content: '恭喜你，报名成功',skin: 'msg',time: 5});
-		          				console.log(res);
+//		          				console.log(res);
 		          			}).catch(e=>{
-		          				console.log(e)
+//		          				console.log(e)
 		          			})
 			          })	
           			
