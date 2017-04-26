@@ -103,11 +103,17 @@
           						}
           					}
           					var country = city.child[m];
-          					for(var i=0;i<country.child.length;i++){
-          						if(country.child[i].id==countyCode){
-          							area3=country.child[i].name;
-          						}
-          					}
+						if(country.child){
+							for(var i=0;i<country.child.length;i++){
+								if(country.child[i].id==countyCode){
+									area3=country.child[i].name;
+								}
+							}
+						}else{
+							area3=''
+						}
+
+
           				_this.areas=area1+' '+area2+' '+area3;
           					          					
           				});
